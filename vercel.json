@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/motionstudio.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/motionstudio", "dest": "/api/motionstudio.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
