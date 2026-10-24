@@ -866,6 +866,16 @@
     padding: 12px;
     line-height: 1.6;
   }
+
+  /* Phones and tablets: let the page scroll and stack the panels, canvas first */
+  @media (max-width: 900px) {
+    html, body { height: auto; overflow: auto; }
+    .app { height: auto; min-height: 100vh; grid-template-rows: 52px auto; }
+    .panels { grid-template-columns: 1fr; overflow: visible; }
+    .panel-canvas { order: -1; min-height: 52vh; }
+    .panel-controls, .panel-ai { overflow: visible; max-height: none; border-left: 0; border-right: 0; border-top: 1px solid var(--border); }
+    .panel-ai-body { max-height: none; overflow: visible; }
+  }
 </style>
 </head>
 <body>
