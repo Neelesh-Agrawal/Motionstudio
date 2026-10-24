@@ -21,7 +21,7 @@ ease · ease-in · ease-out · ease-in-out · linear · spring · snappy · shar
 ## Stack
 
 - Vanilla HTML/CSS/JS — zero dependencies
-- Groq API (`llama-3.3-70b-versatile`) via Vercel serverless
+- Groq API (`openai/gpt-oss-120b`) via Vercel serverless
 - Vercel hosting
 
 ## Deploy
